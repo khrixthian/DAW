@@ -1,0 +1,198 @@
+/*Tipos de letra*/
+
+@font-face {
+    font-family: FasterOne-Regular;
+    src: url(Fuentes/FasterOne-Regular.ttf);
+}
+@font-face {
+    font-family: RougeScript-Regular;
+    src: url(Fuentes/RougeScript-Regular.ttf);
+}
+@font-face {
+    font-family: TheNautigal-Bold;
+    src: url(Fuentes/TheNautigal-Bold.ttf);
+}
+@font-face {
+    font-family: TheNautigal-Regular;
+    src: url(Fuentes/TheNautigal-Regular.ttf);
+}
+
+/*Fin de tipos de letra*/
+
+/*Header*/
+.contenedor {
+	width: 95%;
+	max-width:1000px;
+	margin:auto;
+}
+#titulo{
+	height: 110px;
+}
+#foto_tienda{
+	background: url("Imagenes/FLORISTERIAELDESVAN-1(1).jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#nombre_tienda{
+	background: url("Imagenes/merceria-TUNEADA(1).jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#logo{
+	background: url("Imagenes/logo.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 0;
+}
+.contenedor p {
+	margin-bottom:40px;
+}
+
+header nav {
+	background:#3498db;
+	margin-bottom:10px;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:#fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background:#66CCFF;
+}
+nav{
+	/* margin-top: -5em; */
+}
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+	margin-top: 0;
+}
+@media (max-width: 570px){
+	#titulo{
+		height: 50px;
+	}
+}
+
+/*Fin header*/
+
+/*Section*/
+#mini_descripcion{
+	padding-top:20%;
+	text-align: center;
+	width: 1170px;
+	height: 650px;
+	background-image: url("Imagenes/040-arredo-banco-vetrine-illuminate-merceria.jpg");
+}
+#parrafo_descripcion{
+	color:black;
+	background-color: antiquewhite;
+	/* border: 3px dotted black; */
+	font-weight: bold;
+	max-width: 70%;
+	margin-left: 10%;
+	font-size:1.1em;
+}
+#boton_conocenos{
+	font-size: 1.2em;
+}
+
+	/*Galería*/
+	#contenedor_imagenes{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.imagen{
+		border: 5px solid black;
+		object-fit: cover;
+		height: 300px;
+		width: 350px;
+		margin: 20px;
+	}
+	#contenedor_imagenes h2{
+		font-family: RougeScript-Regular;
+		letter-spacing: .4em;
+		font-weight: bold;	
+		text-align: center;
+		text-decoration: underline;
+	}
+	#contenedor_imagenes h2:first-child{
+		text-align: center;
+		color:rgb(66, 9, 119);
+		border-top: 4px solid blue;
+		border-bottom: 4px solid blue;
+		letter-spacing: .7em;
+		font-weight: bold;
+		text-decoration: none;	
+	}
+
+		/*Transiciones Galería*/
+		.imagen{   
+			transition: transform 1s ease;
+		}
+		.imagen:hover{   
+			transform: scale(1.1);
+		}
+
+	/*Fin Galería*/
+
+/*Fin Section*/
+
+/*Footer*/
+
+.redes_sociales{
+    background-image: url("Imagenes/redes-sociales.png");
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#bloque-redes-sociales{
+    margin-top: 10px;
+}
+#twitter{
+    background-position: -26px 0px;
+
+}
+#youtube{
+    background-position: -52px 0px;
+}
+#instagram{
+    background-position: -78px 0px;
+}
+#facebook:hover{
+    background-position: 0px 26px;
+}
+#twitter:hover{
+    background-position: -26px 26px;
+}
+#youtube:hover{
+    background-position: -52px 26px;
+}
+#instagram:hover{
+    background-position: -78px 26px;
+}
+#footer{
+	background-color: #9966FF;
+}
+
+/*Fin footer*/
